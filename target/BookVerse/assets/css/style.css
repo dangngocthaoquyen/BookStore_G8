@@ -1,0 +1,148 @@
+/*
+ * BookVerse Custom Styles
+ * Tuân thủ quy định thiết kế UI từ CLAUDE.MD
+ */
+
+/* Card standard */
+.card-standard {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+}
+
+/* Button styles */
+.btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200;
+}
+
+.btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200 transition-colors duration-200;
+}
+
+.btn-danger {
+    @apply bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors duration-200;
+}
+
+.btn-success {
+    @apply bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors duration-200;
+}
+
+/* Form input styles */
+.input-standard {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors;
+}
+
+.input-error {
+    @apply border-red-500 focus:ring-red-500;
+}
+
+/* Badge styles */
+.badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+    @apply bg-green-100 text-green-600;
+}
+
+.badge-error {
+    @apply bg-red-100 text-red-600;
+}
+
+.badge-warning {
+    @apply bg-yellow-100 text-yellow-600;
+}
+
+.badge-info {
+    @apply bg-blue-100 text-blue-600;
+}
+
+/* Table styles */
+.table-standard {
+    @apply w-full text-sm text-left;
+}
+
+.table-standard thead {
+    @apply bg-gray-50 border-b border-gray-200;
+}
+
+.table-standard th {
+    @apply px-6 py-3 text-xs font-medium text-gray-600 uppercase tracking-wider;
+}
+
+.table-standard td {
+    @apply px-6 py-4 text-gray-900;
+}
+
+.table-standard tbody tr {
+    @apply border-b border-gray-200 hover:bg-gray-50 transition-colors;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300;
+}
+
+/* Modal container */
+.modal-container {
+    @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+}
+
+.modal-content {
+    @apply bg-white rounded-lg shadow-lg max-w-lg w-full transform transition-all duration-300;
+}
+
+/* Loading spinner */
+.spinner {
+    @apply animate-spin h-5 w-5 border-2 border-blue-600 border-t-transparent rounded-full;
+}
+
+/* Hover effects */
+.hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+    @apply transition-all duration-200 ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Hide number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
