@@ -133,18 +133,6 @@
                         <h2 class="text-lg font-semibold text-gray-900 mb-4">Phương thức thanh toán</h2>
 
                         <div class="space-y-3">
-                            <!-- COD -->
-                            <label class="flex items-start p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-500 transition-colors">
-                                <input type="radio"
-                                       name="paymentMethod"
-                                       value="cod"
-                                       checked
-                                       class="mt-1 w-4 h-4 text-blue-600 focus:ring-blue-500">
-                                <div class="ml-3 flex-1">
-                                    <div class="font-medium text-gray-900">Thanh toán khi nhận hàng (COD)</div>
-                                    <p class="text-sm text-gray-500 mt-1">Thanh toán bằng tiền mặt khi nhận hàng</p>
-                                </div>
-                            </label>
 
                             <!-- VNPay -->
                             <label class="flex items-start p-4 border-2 border-gray-200 rounded-lg cursor-pointer hover:border-blue-500 transition-colors">
