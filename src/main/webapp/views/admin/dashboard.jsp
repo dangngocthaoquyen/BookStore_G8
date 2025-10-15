@@ -185,7 +185,7 @@
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                            <a href="${pageContext.request.contextPath}/admin/orders/${order.orderId}"
+                                            <a href="${pageContext.request.contextPath}/admin/order-detail?id=${order.orderId}"
                                                class="text-blue-600 hover:text-blue-800 font-medium">
                                                 Chi tiết
                                             </a>
@@ -213,7 +213,7 @@
                         <h3 class="text-sm font-semibold text-gray-900">Thêm sách mới</h3>
                         <p class="text-xs text-gray-600 mt-1">Thêm sách vào kho hàng</p>
                     </div>
-                    <a href="${pageContext.request.contextPath}/admin/books/add"
+                    <a href="${pageContext.request.contextPath}/admin/book-form"
                        class="px-4 py-2 bg-blue-600 text-white text-sm rounded-md hover:bg-blue-700 transition-colors">
                         Thêm
                     </a>
